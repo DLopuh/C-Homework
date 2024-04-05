@@ -22,24 +22,24 @@ namespace Variable
 
             decimal phisicsPoints = 99.8M;
 
-            Console.WriteLine(fullName);
-            Console.WriteLine(age);
-            Console.WriteLine(email);
-            Console.WriteLine(programmingPoint);
-            Console.WriteLine(mathScore);
-            Console.WriteLine(phisicsPoints);
+            Console.WriteLine("Ф.И.О: " + fullName);
+            Console.WriteLine("Возраст: " + age);
+            Console.WriteLine("Почта: " + email);
+            Console.WriteLine("Баллы по программированию: " + programmingPoint);
+            Console.WriteLine("Баллы по математике: " + mathScore);
+            Console.WriteLine("Баллы по физике: " + phisicsPoints);
 
             Console.ReadLine();
 
             decimal sum = (decimal)programmingPoint + (decimal)mathScore + phisicsPoints;
 
-            Console.WriteLine(sum);
+            Console.WriteLine("Сумма: " + sum);
 
             Console.ReadLine();
 
-            decimal averageMark = ((programmingPoint + mathScore + phisicsPoints) / 3);
+            decimal averageMark = (((decimal)programmingPoint + (decimal)mathScore + phisicsPoints) / 3);
 
-            Console.WriteLine(averageMark);
+            Console.WriteLine("Средний бал: " + averageMark);
 
             Console.ReadLine();
         }
